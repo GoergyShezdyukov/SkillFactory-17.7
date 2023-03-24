@@ -1,0 +1,13 @@
+money: int = float(input("Введите сумму:"))
+per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0}
+keys_per_cent = per_cent.keys()
+values_per_cent = list(map(float, per_cent.values()))
+d0 = money*values_per_cent[0]
+d1 = money*values_per_cent[1]
+d2 = money*values_per_cent[2]
+d3 = money*values_per_cent[3]
+deposit = [d0, d1, d2, d3]
+Maxdeposit = max(deposit)
+print("money=", int(money))
+print("deposit=", list(map(round, deposit)))
+print("Максимальная сумма -", round(Maxdeposit))
