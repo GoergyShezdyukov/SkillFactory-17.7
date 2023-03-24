@@ -10,4 +10,4 @@ deposit = [d0, d1, d2, d3]
 Maxdeposit = max(deposit)
 print("money=", int(money))
 print("deposit=", list(map(round, deposit)))
-print("Максимальная сумма -", round(Maxdeposit))
+print("Максимальная сумма, которую вы можете заработать -", round(Maxdeposit))
